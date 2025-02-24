@@ -14,7 +14,7 @@ module.exports = {
         'dark-blue': 'hsl(235, 46%, 20%)',
         'desatured-blue': 'hsl(235, 45%, 61%)',
         'pale-blue': 'hsl(236, 100%, 87%)',
-        white: 'hsl(0, 0%, 100%)',
+        'white': 'hsl(0, 0%, 100%)',
       },
       fontFamily: {
         rubik: ['Rubik', 'sans-serif'],
