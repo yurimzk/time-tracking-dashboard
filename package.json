@@ -5,7 +5,9 @@
     "build:tailwind": "tailwindcss build ./src/styles.scss -o ./dist/output.css",
     "build": "npm run build:tailwind",
     "watch:tailwind": "npx tailwindcss -i ./src/styles.scss -o ./dist/output.css --watch",
-    "watch": "npm run watch:tailwind"
+    "watch": "npm run watch:tailwind",
+    "lint": "eslint . --fix",
+    "format": "prettier --write ."
   },
   "dependencies": {
     "autoprefixer": "^10.4.20",
@@ -13,6 +15,12 @@
     "tailwindcss": "^2.2.19"
   },
   "devDependencies": {
+    "@eslint/js": "^9.21.0",
+    "eslint": "^9.21.0",
+    "eslint-config-prettier": "10.0.1",
+    "eslint-plugin-prettier": "5.2.3",
+    "globals": "^16.0.0",
+    "prettier": "3.5.2",
     "sass": "^1.85.0"
   }
 }
