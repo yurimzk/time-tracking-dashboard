@@ -22,7 +22,7 @@
   <body class="font-rubik text-lg">
     <div
       id="app"
-      class="bg-very-dark-blue flex flex-col gap-6 justify-items-center items-center py-16"
+      class="bg-very-dark-blue flex flex-col gap-16 justify-items-center items-center py-16"
     >
       <header class="bg-dark-blue rounded-xl">
         <div
@@ -48,10 +48,20 @@
           </ul>
         </div>
       </header>
-      <main class="flex flex-col gap-6">
-        <div class="work-container">
-          <div class="background-banner"></div>
-          <div class="work-info bg-dark-blue rounded-xl px-6 py-5">
+      <main class="flex flex-col gap-16">
+        <div class="work-container relative">
+          <div
+            class="background-banner bg-light-red-work flex flex-row-reverse rounded-t-lg absolute inset-x-0 -top-10 z-0"
+          >
+            <img
+              src="./images/icon-work.svg"
+              class="w-16 h-16"
+              alt="Work background banner"
+            />
+          </div>
+          <div
+            class="work-info bg-dark-blue rounded-xl px-6 py-5 relative z-10"
+          >
             <div class="work-info-header flex justify-between items-center">
               <p class="text-white font-medium">Work</p>
               <img src="./images/icon-ellipsis.svg" alt="Options button" />
@@ -64,9 +74,19 @@
             </div>
           </div>
         </div>
-        <div class="play-container">
-          <div class="background-banner"></div>
-          <div class="play-info bg-dark-blue rounded-xl px-6 py-5">
+        <div class="play-container relative">
+          <div
+            class="background-banner bg-soft-blue-play flex flex-row-reverse rounded-t-lg absolute inset-x-0 -top-10 z-0"
+          >
+            <img
+              src="./images/icon-play.svg"
+              class="w-16 h-16"
+              alt="Play background banner"
+            />
+          </div>
+          <div
+            class="play-info bg-dark-blue rounded-xl px-6 py-5 relative z-10"
+          >
             <div class="play-header flex justify-between items-center">
               <p class="text-white font-medium">Play</p>
               <img src="./images/icon-ellipsis.svg" alt="Options button" />
@@ -77,9 +97,19 @@
             </div>
           </div>
         </div>
-        <div class="study-container">
-          <div class="background-banner"></div>
-          <div class="study-info bg-dark-blue rounded-xl px-6 py-5">
+        <div class="study-container relative">
+          <div
+            class="background-banner bg-light-red-study flex flex-row-reverse rounded-t-lg absolute inset-x-0 -top-10 z-0"
+          >
+            <img
+              src="./images/icon-study.svg"
+              class="w-16 h-16"
+              alt="Study background banner"
+            />
+          </div>
+          <div
+            class="study-info bg-dark-blue rounded-xl px-6 py-5 relative z-10"
+          >
             <div class="study-header flex justify-between items-center">
               <p class="text-white font-medium">Study</p>
               <img src="./images/icon-ellipsis.svg" alt="Options button" />
@@ -90,9 +120,19 @@
             </div>
           </div>
         </div>
-        <div class="exercise-container">
-          <div class="background-banner"></div>
-          <div class="exercise-info bg-dark-blue rounded-xl px-6 py-5">
+        <div class="exercise-container relative">
+          <div
+            class="background-banner bg-lime-green-exercise flex flex-row-reverse rounded-t-lg absolute inset-x-0 -top-10 z-0"
+          >
+            <img
+              src="./images/icon-exercise.svg"
+              class="w-16 h-16"
+              alt="Exercise background banner"
+            />
+          </div>
+          <div
+            class="exercise-info bg-dark-blue rounded-xl px-6 py-5 relative z-10"
+          >
             <div class="exercise-header flex justify-between items-center">
               <p class="text-white font-medium">Exercise</p>
               <img src="./images/icon-ellipsis.svg" alt="Options button" />
@@ -105,9 +145,19 @@
             </div>
           </div>
         </div>
-        <div class="social-container">
-          <div class="background-banner"></div>
-          <div class="social-info bg-dark-blue rounded-xl px-6 py-5">
+        <div class="social-container relative">
+          <div
+            class="background-banner bg-violet-social flex flex-row-reverse rounded-t-lg absolute inset-x-0 -top-10 z-0"
+          >
+            <img
+              src="./images/icon-social.svg"
+              class="w-16 h-16"
+              alt="Social background banner"
+            />
+          </div>
+          <div
+            class="social-info bg-dark-blue rounded-xl px-6 py-5 relative z-10"
+          >
             <div class="social-header flex justify-between items-center">
               <p class="text-white font-medium">Social</p>
               <img src="./images/icon-ellipsis.svg" alt="Options button" />
@@ -118,17 +168,29 @@
             </div>
           </div>
         </div>
-        <div class="self-care-container">
-          <div class="background-banner"></div>
-        </div>
-        <div class="self-care-info bg-dark-blue rounded-xl px-6 py-5">
-          <div class="self-care-header flex justify-between items-center">
-            <p class="text-white font-medium">Self Care</p>
-            <img src="./images/icon-ellipsis.svg" alt="Options button" />
+        <div class="self-care-container relative">
+          <div
+            class="background-banner bg-soft-orange-self-care flex flex-row-reverse rounded-t-lg absolute inset-x-0 -top-10 z-0"
+          >
+            <img
+              src="./images/icon-self-care.svg"
+              class="w-16 h-16"
+              alt="Self care background banner"
+            />
           </div>
-          <div class="self-care-info-content flex justify-between items-center">
-            <p class="text-white text-3xl font-light">2hrs</p>
-            <p class="text-pale-blue text-sm font-light">Last Week - 2hrs</p>
+          <div
+            class="self-care-info bg-dark-blue rounded-xl px-6 py-5 relative z-10"
+          >
+            <div class="self-care-header flex justify-between items-center">
+              <p class="text-white font-medium">Self Care</p>
+              <img src="./images/icon-ellipsis.svg" alt="Options button" />
+            </div>
+            <div
+              class="self-care-info-content flex justify-between items-center"
+            >
+              <p class="text-white text-3xl font-light">2hrs</p>
+              <p class="text-pale-blue text-sm font-light">Last Week - 2hrs</p>
+            </div>
           </div>
         </div>
       </main>
