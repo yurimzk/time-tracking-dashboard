@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
-  const dailyBtn = document.querySelector('.daily-btn')
-  const weeklyBtn = document.querySelector('.weekly-btn')
-  const monthlyBtn = document.querySelector('.monthly-btn')
+  const dailyBtn = document.querySelector('.daily-btn');
+  const weeklyBtn = document.querySelector('.weekly-btn');
+  const monthlyBtn = document.querySelector('.monthly-btn');
 
   let json
 
@@ -49,13 +49,22 @@ document.addEventListener('DOMContentLoaded', function () {
 
   dailyBtn.addEventListener('click', function () {
     handleTimeframe('daily');
+    dailyBtn.style.color = 'white';
+    weeklyBtn.style.color = 'hsl(235, 45%, 61%)';
+    monthlyBtn.style.color = 'hsl(235, 45%, 61%)';
   })
 
   weeklyBtn.addEventListener('click', function () {
     handleTimeframe('weekly');
+    weeklyBtn.style.color = 'white';
+    dailyBtn.style.color = 'hsl(235, 45%, 61%)';
+    monthlyBtn.style.color = 'hsl(235, 45%, 61%)';
   })
 
   monthlyBtn.addEventListener('click', function () {
     handleTimeframe('monthly');
+    monthlyBtn.style.color = 'white';
+    dailyBtn.style.color = 'hsl(235, 45%, 61%)';
+    weeklyBtn.style.color = 'hsl(235, 45%, 61%)';
   })
 })
