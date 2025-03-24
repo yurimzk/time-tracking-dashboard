@@ -2,6 +2,8 @@ module.exports = {
   content: ['./*.html', './src/**/*.{html,js,scss}'],
   theme: {
     extend: {
+      textColor: ['hover'],
+      backgroundColor: ['hover'],
       colors: {
         'user-blue': 'hsl(246, 80%, 60%)',
         'light-red-work': 'hsl(15, 100%, 70%)',
@@ -18,6 +20,12 @@ module.exports = {
       fontFamily: {
         rubik: ['Rubik', 'sans-serif'],
       },
+    },
+  },
+  variants: {
+    extend: {
+      textColor: ['hover'],
+      backgroundColor: ['hover'],
     },
   },
   plugins: [],
